@@ -1,0 +1,62 @@
+/* Write your CSS here */
+.container {
+  height: 150vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  color: white;
+  font-family: Roboto;
+  font-size: 40px;
+  font-weight: 500;
+}
+.speed-image {
+  width: 70vh;
+  height: 70vh;
+}
+.description {
+  color: white;
+  font-family: Roboto;
+  font-size: 30px;
+  font-size: 400;
+}
+
+.para {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: Roboto;
+}
+.button-container {
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #0b69ff;
+  color: white;
+  font-size: 10px;
+  font-weight: 400;
+  font-family: Roboto;
+  border: none;
+  border-radius: 10px;
+  height: 5vh;
+  margin-right: 30px;
+  width: 100px;
+}
+
+.button-tran {
+  color: #94a3b8;
+  font-size: 10px;
+  font-weight: 400;
+  font-family: Roboto;
+  border: 2px solid #94a3b8;
+  border-radius: 10px;
+  height: 5vh;
+  margin-right: 30px;
+  margin-left: 10px;
+  width: 100px;
+  background-color: transparent;
+}
