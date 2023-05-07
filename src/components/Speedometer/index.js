@@ -8,12 +8,16 @@ class Speedometer extends Component {
 
   onAccelerate = () => {
     const {count} = this.state
-    if (count < 200) this.setState(preState => ({count: preState.count + 10}))
+    if (count < 200) {
+      this.setState(preState => ({count: preState.count + 10}))
+    }
   }
 
   onBrake = () => {
     const {count} = this.state
-    if (count > 0) this.setState(preState => ({count: preState.count - 10}))
+    if (count > 0) {
+      this.setState(preState => ({count: preState.count - 10}))
+    }
   }
 
   render() {
@@ -27,14 +31,14 @@ class Speedometer extends Component {
           alt="Speedometer"
           className="speed-image"
         />
-        <h1 className="description">Speedometer is {count} mph</h1>
+        <h1 className="description">Speedometer is {count}mph</h1>
         <p className="para">Min Limit is 0mph, Max Limit is 200mph</p>
         <div className="button-container">
           <button type="button" className="button" onClick={this.onAccelerate}>
             Accelerate
           </button>
           <button type="button" className="button-tran" onClick={this.onBrake}>
-            Apply Breaks
+            Apply Break
           </button>
         </div>
       </div>
