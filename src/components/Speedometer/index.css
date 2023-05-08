@@ -1,62 +1,67 @@
 /* Write your CSS here */
-.container {
-  height: 150vh;
-  background-color: black;
+.bg-container {
+  background-color: #07080c;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.heading {
-  color: white;
-  font-family: Roboto;
-  font-size: 40px;
-  font-weight: 500;
+
+.head {
+  color: #ffffff;
+  font-size: 34px;
+  font-style: italic;
+  margin-bottom: 15px;
 }
-.speed-image {
-  width: 70vh;
-  height: 70vh;
+
+.img {
+  width: 60%;
 }
-.description {
-  color: white;
-  font-family: Roboto;
-  font-size: 30px;
-  font-size: 400;
+
+.sub-head {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .para {
-  color: white;
-  font-size: 20px;
-  font-weight: 300;
-  font-family: Roboto;
-}
-.button-container {
-  margin-top: 20px;
+  color: #cbd5e1;
+  font-size: 13px;
 }
 
-.button {
+.btn {
+  border-radius: 6px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn1 {
   background-color: #0b69ff;
-  color: white;
-  font-size: 10px;
-  font-weight: 400;
-  font-family: Roboto;
+  color: #ffffff;
   border: none;
-  border-radius: 10px;
-  height: 5vh;
-  margin-right: 30px;
-  width: 100px;
 }
 
-.button-tran {
-  color: #94a3b8;
-  font-size: 10px;
-  font-weight: 400;
-  font-family: Roboto;
-  border: 2px solid #94a3b8;
-  border-radius: 10px;
-  height: 5vh;
-  margin-right: 30px;
-  margin-left: 10px;
-  width: 100px;
+.btn2 {
   background-color: transparent;
+  color: #94a3b8;
+  border: 2px solid #94a3b8;
+}
+
+@media (min-width: 768px) {
+  .head {
+    font-size: 64px;
+    margin-bottom: 25px;
+  }
+  .sub-head {
+    font-size: 30px;
+  }
+  .para {
+    font-size: 16px;
+  }
 }
